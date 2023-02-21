@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather%20Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather%20Sans:wght@700&display=swap');
+
 
 *{
     margin: 0;
@@ -40,7 +42,7 @@ header{
 #content-header{
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 50px;
 }
 .nav-header{
     display: flex;
@@ -49,12 +51,14 @@ header{
     font-weight: 400;
     color: white;
 }
-.nav-header a{
+.nav-header a, .nav-header a:visited{
     color: white;
+    transition: 0.3s;
 }
-.nav-header a:visited{
-    color: white;
+.nav-header a:hover{
+    color: #FF5B50;
 }
+
 .titulo-header h1{
     color: white;
     font-size: 40px;
@@ -127,24 +131,33 @@ header{
 
 #infos-nfts{
     display: flex;
-    border: 1px solid red;
-    margin-left: 5%;
-    margin-top: 80px;
+    padding-left: 5%;
     color: white;
+    align-items: center;
+    border-bottom: 1px solid #5A5757 ;
 }
 .coluna-infos-num{
-
-}
-.num-artistas{
+    padding-right: 65px;
     display: flex;
     flex-direction: column;
+    gap: 70px;
+}
+.num-artistas, .num-vendas, .num-artes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .num-artistas p,.num-vendas p, .num-artes p{
-    color: #5A5757;  
+    color: #5A5757;
+    font-size: 22px; 
 }
 .num-artistas h2,.num-vendas h2, .num-artes h2{
     font-size: 46px;
     line-height: 60px;
+}
+.img-artes{
+    display: flex;
 }
 .img-artes img{
     width: 100%;
@@ -152,14 +165,23 @@ header{
 .frases-artes{
     width: 80%;
     display: flex;
-    padding-left: 4vw;
-    gap: 10vw;
+    padding-left: 5vw;
+    gap: 14vw;
+    margin-bottom: 70px;
 }
 .frases-artes-content{
-    width: 40%;
+    width: 36%;
     display: flex;
     flex-direction: column;
     gap: 8vh;
+}
+.sobre-artes{
+    padding-top: 80px;
+    border-left: 1px solid #5A5757 ;
+}
+.frases-artes-content p{
+    font-size: 14px;
+    line-height: 18px;
 }
 .frases-artes span{
     color: #ff5b50;
@@ -168,4 +190,141 @@ header{
 .cor-cinza{
     
     text-decoration: underline;
+}
+
+.populares-semana{
+    padding-top: 150px;
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+.populares-semana > h2{
+    font-weight: 700;
+    font-size: 50px;
+    padding-bottom: 150px;
+}
+.populares-semana span{
+    color: #ff5b50;
+}
+.artes-populares{
+    display: flex;
+    justify-content: space-between;
+}
+.coluna-artes-1{
+    width: 40%;
+}
+.coluna-artes-2{
+    width: 40%;
+}
+.borda-meio{
+    border: 0.5px solid #5A5757 ;
+}
+.coluna-artes-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 80px;
+}
+.coluna-artes-2{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 80px;
+}
+.arte-astr{
+    display: flex;
+    flex-direction: column;
+}
+.arte-preco-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.name-artista{
+    font-size: 14px;
+    color: #5A5757;
+}
+.preço{
+    font-size: 14px;
+    text-align: right;
+    color: #FF5B50;
+}
+.arte-astr h3{
+    font-size: 28px;
+    padding-bottom: 40px;
+}
+
+
+.melhores-artistas{
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    align-items: center;
+    padding-bottom: 130px;
+}
+.melhores-artistas h2{
+    font-size: 50px;
+    padding-bottom: 110px;
+}
+.cor-vermelha{
+    color: #FF5B50;
+}
+.content-artistas{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.tres-artitas{
+    display: flex;
+    justify-content: space-between;
+}
+.artista{
+    width: 27%;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.artista > img{
+    padding: 25px 0;
+}
+.artista:hover{
+    background-color: #FF5B50;
+    transform: scale(1.05);
+}
+.artista:hover .quant-fotografias{
+    color: white;
+}
+.info-artista{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.quant-fotografias{
+    transition: 0.3s;
+    color: #FF5B50;
+}
+.link-todos-artistas, .link-todos-artistas:visited{
+    color: white;
+    transition: 0.3s;
+}
+
+.link-todos-artistas:hover{
+    color: #FF5B50;
+}
+
+footer{
+    background-color: #252525;
+}
+.content-footer{
+    width: 90%;
+    margin: auto;
 }
