@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather%20Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+  }
+body{
+    background-color: #0e0e0e;
+    font-family: 'Merriweather Sans';
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin-bottom: 90px;
+}
+#pri-cont{
+    width: 90%;
+    margin: auto;
+}
+#background{
+    padding-top: 55px;
+    background: url(assets/background.png) no-repeat;
+    background-position: center top;
+}
+#content-header{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.nav-header{
+    display: flex;
+    gap: 5vw;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.nav-header a{
+    color: white;
+}
+.nav-header a:visited{
+    color: white;
+}
+.titulo-header h1{
+    color: white;
+    font-size: 40px;
+}
+.titulo-header span{
+    color: #FF5B50;
+    font-size: 40px;
+}
+.button-carteira button{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px 22px 5px 14px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.descubra-nft{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+.descubra-nft-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28%;
+}
+.descubra-nft-1 > p{
+    font-size: 16px;
+}
+.avatares{
+    display: flex;
+    margin-top: 55px;
+}
+.selecionados{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.descubra-nft-2 {
+    width: 45%;
+}
+.descubra-nft-2 h2{
+    font-size: 50px;
+    line-height: 61px;
+}
+.descubra-nft-2 span{
+    color: #ff5b50;
+    line-height: 61px;
+}
+.img-nft{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.pri-img-nft, .sec-img-nft{
+    display: flex;
+    justify-content: space-between;
+}
+.pri-img-nft img, .sec-img-nft img{
+    width: 23%;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+.pri-img-nft img:hover, .sec-img-nft img:hover{
+    transform: scale(1.05);
+}
+
+#infos-nfts{
+    display: flex;
+    border: 1px solid red;
+    margin-left: 5%;
+    margin-top: 80px;
+    color: white;
+}
+.coluna-infos-num{
+
+}
+.num-artistas{
+    display: flex;
+    flex-direction: column;
+}
+.num-artistas p,.num-vendas p, .num-artes p{
+    color: #5A5757;  
+}
+.num-artistas h2,.num-vendas h2, .num-artes h2{
+    font-size: 46px;
+    line-height: 60px;
+}
+.img-artes img{
+    width: 100%;
+}
+.frases-artes{
+    width: 80%;
+    display: flex;
+    padding-left: 4vw;
+    gap: 10vw;
+}
+.frases-artes-content{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 8vh;
+}
+.frases-artes span{
+    color: #ff5b50;
+    text-decoration: underline;
+}
+.cor-cinza{
+    
+    text-decoration: underline;
+}
