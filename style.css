@@ -325,6 +325,116 @@ footer{
     background-color: #252525;
 }
 .content-footer{
+    
+    color: white;
+}
+.name-button-footer{
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+.name-button-footer h2{
+    font-size: 40px;
+}
+.name-button-footer h2 span{
+    color: #FF5B50;
+}
+.name-button-footer button{
+    padding: 20px;
+   background-color: #FF5B50;
+   border: none;
+   transition: 0.3s;
+   cursor: pointer;
+}
+.name-button-footer button:hover{
+    background-color: white;
+}
+.coisas-empresas{
+    
+    border-top: 1px solid  #5A5757;
+    border-bottom: 1px solid  #5A5757;
+    display: flex;
+    align-items: center;
+}
+.pri-coisas-empresas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-right: 60px;
+    padding: 5%;
+    border-right: 1px solid  #5A5757;
+}
+
+.pri-coisas-empresas h4{
+    font-size: 30px;
+}
+.colo-ver{
+    color: #FF5B50;
+}
+.form{
+    display: flex;
+}
+.form input{
+    background-color: black;
+    border: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    color:#5A5757;
+    padding: 25px 20px 25px 25px;
+}
+.form input:focus{
+    outline: none;
+}
+.form button{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 0;
+}
+.form button:hover{
+    background-color: #FF5B50;
+    color: white;
+}
+.sec-coisas-empresas{
+    display: flex;
+    gap: 13vw;
+    padding-left: 120px;
+}
+.coluna-coisas-empresas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.coluna-coisas-empresas a, .coluna-coisas-empresas a:visited{
+    color:#5A5757;
+    font-size: 18px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.coluna-coisas-empresas a:hover{
+    color: white;
+}
+.contato{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0 60px 0;
+}
+.contato p{
+    color: #5A5757;
+    font-size: 18px;
+    font-weight: 400;
+}
+.img-contato{
+    display: flex;
+    gap: 4vw;
 }
