@@ -36,7 +36,7 @@ header{
 }
 #background{
     padding-top: 55px;
-    background: url(assets/background.png) no-repeat;
+    background: url(assets/background.png);
     background-position: center top;
 }
 #content-header{
@@ -65,7 +65,6 @@ header{
 }
 .titulo-header span{
     color: #FF5B50;
-    font-size: 40px;
 }
 .button-carteira button{
     display: flex;
@@ -79,6 +78,7 @@ header{
 .descubra-nft{
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
     color: white;
     align-items: center;
 }
@@ -105,7 +105,6 @@ header{
 }
 .descubra-nft-2 h2{
     font-size: 50px;
-    line-height: 61px;
 }
 .descubra-nft-2 span{
     color: #ff5b50;
@@ -166,7 +165,7 @@ header{
     width: 80%;
     display: flex;
     padding-left: 5vw;
-    gap: 14vw;
+    justify-content: space-between;
     margin-bottom: 70px;
 }
 .frases-artes-content{
@@ -174,6 +173,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 8vh;
+    min-width: 285px;
 }
 .sobre-artes{
     padding-top: 80px;
@@ -283,6 +283,7 @@ header{
 .tres-artitas{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .artista{
     width: 27%;
@@ -292,6 +293,7 @@ header{
     justify-content: space-around;
     transition: 0.3s;
     cursor: pointer;
+    min-width: 265px;
 }
 .artista > img{
     padding: 25px 0;
@@ -385,7 +387,7 @@ footer{
     line-height: 24px;
     font-weight: 400;
     color:#5A5757;
-    padding: 25px 20px 25px 25px;
+    padding: 25px 0px 25px 25px;
 }
 .form input:focus{
     outline: none;
@@ -405,7 +407,8 @@ footer{
 .sec-coisas-empresas{
     display: flex;
     gap: 13vw;
-    padding-left: 120px;
+    padding-left: 5%;
+    transition: 0.3s;
 }
 .coluna-coisas-empresas{
     display: flex;
@@ -437,4 +440,346 @@ footer{
 .img-contato{
     display: flex;
     gap: 4vw;
+}
+.arte-astr img{
+    transition: 0.3s;
+}
+.menu-escondido{
+    position: absolute;
+    top: 98px;
+    width: 100px;
+    z-index: 10;
+    background-color: transparent;
+    gap: 10px;
+    transform: scaleY(0);
+    transform-origin: top center;
+    transition: transform .5s;
+    right: 0px;
+    color: #137aaa;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 4px 4px 10px rgb(0 0 0 / 38%);
+}
+.menu-escondido a,.menu-escondido a:visited{
+    color: white;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.menu-escondido a:hover{
+    color: #FF5B50;
+}
+.linha{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 3px auto;
+    position: relative;
+    transform-origin: center;
+    transition: 0.5s;
+}
+#btn-menu{
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+#btn-menu.ativar .linha:nth-child(1){
+    transform: translateY(5px) rotate(-45deg);
+}
+#btn-menu.ativar .linha:nth-child(3){
+  
+    transform: translateY(-5px) rotate(48deg);
+}
+#btn-menu.ativar .linha:nth-child(2){
+    width: 0;
+}
+.butonn-header{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+@media(max-width:1150px){
+    .sec-coisas-empresas{
+       
+        gap: 8vw;
+    }
+    .artista > img{
+        padding: 15px 0;
+    }
+}
+@media(max-width:1000px){
+    .descubra-nft-2 h2{
+        font-size: 38px;
+    }
+    .arte-astr img{
+        width: 280px;
+    }
+    .coluna-artes-2, .coluna-artes-1{
+        width: 35%;   
+        gap: 60px;
+    }
+    .descubra-nft-1{
+        width: 33%;
+    }
+    .descubra-nft-1 > p, .selecionados{
+        font-size: 14px;
+    }
+    .frases-artes{
+        width: auto;
+    }
+    .frases-artes-content p{
+        font-size: 12px;
+    }
+    .avatares img{
+        width: 150px;
+    }
+    
+}
+@media(max-width:920px){
+    .nav-header{
+        gap: 3vw;
+    }
+    .content-artistas{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    .tres-artitas{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .titulo-header h1, .name-button-footer h2{
+        font-size: 34px;
+    }
+    .pri-coisas-empresas h4{
+        font-size: 26px;
+    }
+    .sec-coisas-empresas{
+        gap: 4vw;
+    }
+    .form input{
+        font-size: 16px;
+        line-height: 20px;
+        padding: 15px 0 15px 15px;
+    }
+    .form button{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .populares-semana > h2, .melhores-artistas h2{
+        font-size: 38px;
+        padding-bottom: 100px;
+    }
+    .melhores-artistas{
+        padding-top: 60px;
+    }
+    .populares-semana{
+        padding-top: 60px;
+    }
+}
+@media(max-width:860px){
+    .arte-astr img{
+        width: 250px;
+    }
+    .num-artistas h2, .num-vendas h2, .num-artes h2{
+        font-size: 32px;
+    }
+    .num-artistas p, .num-vendas p, .num-artes p{
+        font-size: 15px;
+    }
+    .coluna-infos-num{
+        padding-right: 48px;
+    }
+    .melhores-artistas{
+        padding-bottom: 60px;
+    }
+    .nav-header{
+        gap: 2.5vw;
+    }
+    .nav-header a{
+        font-size: 16px;
+    }
+    .button-carteira button{
+        padding: 5px 18px 5px 10px;
+        font-size: 14px;
+        gap: 10px;
+    }
+}
+@media(max-width:810px){
+    
+    .frases-artes {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 40px;
+    }
+    .frases-artes-content{
+        gap: 3vh;
+    }
+    
+    .sobre-artes{
+        padding-top: 40px;
+    }
+    .borda-esc{
+        border-bottom: 1px solid #5A5757;
+        padding-bottom: 15px;
+    }
+    .descubra-nft-1{
+        width: 40%;
+    }
+}
+@media(max-width:730px){
+    .button-carteira button img{
+        width: 25px;
+    }
+   
+    .descubra-nft-2 h2{
+        font-size: 28px;
+    }
+    .avatares{
+        margin-top: 45px;
+    }
+    .descubra-nft-1 > p, .selecionados{
+        font-size: 12px;
+    }
+    #btn-menu{
+        display: block;
+    }
+   
+    .nav-header{
+        display: none;
+    }
+    
+    .arte-astr img{
+        width: 220px;
+    }
+    .arte-astr h3{
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    .name-artista, .preço{
+        font-size: 13px;
+    }
+    .arte-preco-info{
+        padding-bottom: 15px;
+    }
+    .populares-semana > h2, .melhores-artistas h2{
+        font-size: 32px;
+        padding-bottom: 50px;
+    }
+    .titulo-header h1, .name-button-footer h2{
+        font-size: 28px;
+    }
+    .name-button-footer{
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+    .form input{
+        font-size: 13px;
+        line-height: 16px;
+        padding-left: 8px;
+    }
+    .form button{
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 16px;
+    }
+    .pri-coisas-empresas{
+        gap: 20px;
+        padding: 5% 4% 5% 5%;
+    }
+    .pri-coisas-empresas h4{
+        font-size: 22px;
+    }
+    .contato p{
+        font-size: 14px;
+    }
+    .coluna-coisas-empresas a{
+        font-size: 13px;
+    }
+    .sec-coisas-empresas{
+        gap: 5vw;
+    }
+    .descubra-nft-1{
+        width: 45%;
+    }
+}
+@media(max-width:610px){
+    .button-carteira button{
+        padding: 5px 12px 5px 6px;
+        font-size: 12px;
+        gap: 10px;
+    }
+    .pri-coisas-empresas{
+        padding: 5% 3% 5% 5%;
+    }
+    .pri-coisas-empresas h4 {
+        font-size: 18px;
+    }
+    .form input{
+        padding-left: 5px;
+    }
+    .form button{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 14px;
+    }
+    .coluna-coisas-empresas a{
+        font-size: 11px;
+    }
+    .artista{
+        min-width: 240px;
+    }
+    .info-artista {
+        font-size: 14px;
+    }
+    .artista img{
+        width: 70px;
+        height: 70px;
+    }
+    
+}
+@media(max-width:555px){
+    .artista{
+        min-width: 220px;
+        
+    }
+    .artista > img{
+        padding: 10px 0;
+    }
+}
+@media(max-width:525px){
+    .sec-coisas-empresas {
+        gap: 3.5vw;
+    }
+}
+@media(max-width:515px){
+    .artista{
+        min-width: 200px;
+    }
+    .info-artista{
+        font-size: 12px;
+    }
+    .artista img {
+        width: 55px;
+        height: 55px;
+    }
+}
+@media(max-width:460px){
+    .artista{
+        min-width: 175px;
+    }
+    .info-artista{
+        font-size: 10.5px;
+    }
 }
